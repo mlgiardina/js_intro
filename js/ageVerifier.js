@@ -1,10 +1,10 @@
-var verify_age = function(age) {
-  if (age < 21) {
+var verify_age = function(ageArray) {
+  for (var i = 0; i < ageArray.length; i++) {
+    if (ageArray[i] < 21) {
     console.log("too young");
   }
-  else {
-    console.log("proceed");
+  else {}
   }
 }
 
-verify_age(10)
+verify_age([10, 12, 15, 21, 22, 25]);
