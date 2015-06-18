@@ -1,9 +1,13 @@
+/*global console */
+
+'use strict';
+
 var change = [];
 var changer = function(num) {
   while (num > 0) {
     if (num > 100) {
-      console.log("that's too high");
-      exit;
+      console.log('that\'s too high');
+      return;
     }
     else if (num / 25 >= 1) {
       change.push(25);
@@ -22,7 +26,7 @@ var changer = function(num) {
       num = num - 1;
     }
   }
-  console.log(change);
-}
+  return console.log(change);
+};
 
 changer(99);
